@@ -1,0 +1,39 @@
+{
+    "autoplayInstructions": "1",
+    "choices": [
+        {
+            "category": "animal",
+            "imagePath": "fox.jpg",
+            "itemId": "22",
+            "name": "fox",
+            "soundPath": "fox.mp3",
+            "synonyms": []
+        }
+    ],
+    "correctChoice": {
+        "category": "animal",
+        "imagePath": "fox.jpg",
+        "itemId": "22",
+        "name": "fox",
+        "soundPath": "fox.mp3",
+        "synonyms": []
+    },
+    "instructionAudioPaths": [
+        "2.0.0/tasks/instructions/please_pick_the_correct_item_that_matches_the_sound.mp3",
+        "fox.mp3"
+    ],
+    "instructions": "Please pick the correct item that matches the word that you hear",
+    "resourceUrl": "http://s3.amazonaws.com/CT-resources/",
+    "resources": [
+        "fox.jpg",
+        "fox.mp3",
+        "banana.jpg",
+        "banana.mp3",
+        "dress.jpg",
+        "dress.mp3",
+        "thimble.jpg",
+        "thimble.mp3"
+    ],
+    "sessionId": "342909",
+    "taskType": "spoken_word_comprehension_tasks"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login screen -->
+
+    <dimen name="plz_login">37sp</dimen>
+    <dimen name="btn_signup">30sp</dimen>
+    <dimen name="btn_login">30sp</dimen>
+    <dimen name="et_user">26sp</dimen>
+    <dimen name="forget_pass">27sp</dimen>
+
+    <!-- Patient Dashboard -->
+    <dimen name="loginas">16sp</dimen>
+    <dimen name="patient_name">24sp</dimen>
+    <dimen name="txt_title">28sp</dimen>
+    <dimen name="txt_percent">20sp</dimen>
+    <dimen name="txt_items">20sp</dimen>
+    <dimen name="txt_complete">10sp</dimen>
+    <dimen name="txt_start">37sp</dimen>
+    <dimen name="txt_nodata">30sp</dimen>
+
+    <!-- Clinician Dashboard -->
+    <dimen name="txt_patientname">22sp</dimen>
+    <dimen name="txt_day">20sp</dimen>
+    <dimen name="txt_month">17sp</dimen>
+    <dimen name="txt_seemore">16sp</dimen>
+    <dimen name="txt_tooltip">17sp</dimen>
+    <dimen name="btn_bottombar">20sp</dimen>
+
+    <!-- Clinician Tasks Dashboard -->
+
+    <dimen name="txt_middletitle">22sp</dimen>
+    <dimen name="txt_homework">16sp</dimen>
+    <dimen name="btn_save">24sp</dimen>
+
+    <!-- Alert Dialog -->
+    <dimen name="txt_dialogtitle">20sp</dimen>
+    <dimen name="txt_message">16sp</dimen>
+    <dimen name="btn_ok">18sp</dimen>
+    <dimen name="txt_plzselect">24sp</dimen>
+
+    <!-- Doing Tasks -->
+    <dimen name="txt_wordfragment">60sp</dimen>
+    <dimen name="txt_question">23sp</dimen>
+    <dimen name="txt_drop">35sp</dimen>
+  	<dimen name="txt_drag">20sp</dimen>
+    
+
+    <!-- height of an custom left and right switch in setting -->
+    <dimen name="switch_height">60dip</dimen>
+
+    <!-- width of an custom left and right switch in setting -->
+    <dimen name="switch_width">250dip</dimen>
+
+    <!-- width of an microphone in task -->
+    <dimen name="microphone_width">120dip</dimen>
+
+    <!-- width of an outter microphone in task -->
+    <dimen name="outter_microphone_width">150dip</dimen>
+    
+     <dimen name="dragtxt_wordfragment">12dp</dimen>
+<!-- update popup -->
+    <dimen name="update_title">18sp</dimen>
+    <dimen name="txtUpdate">21sp</dimen>
+    
+     
+
+</resources>

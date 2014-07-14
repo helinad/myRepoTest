@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.25"
+            android:background="@color/top_dark_gray" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                     android:background="@color/top_dark_gray"
+                    android:layout_weight="1.25" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvTaskTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_title" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       
+                        android:orientation="horizontal"
+                        android:weightSum="10" >
+
+                        <ImageView
+                            android:id="@+id/ctIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.75"
+                            android:src="@drawable/ct_icon" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlHome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector"
+                            android:orientation="vertical" >
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvHome"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:text="@string/home"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/txt_patientname" />
+                        </RelativeLayout>
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7.25"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_title" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlSkip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector"
+                            android:orientation="vertical" >
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvSkip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:text="@string/skip"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/txt_patientname" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="8.75"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/login_blue"
+                android:padding="15dp"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvProgress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:spinnerMode="dialog"
+                android:text="@string/progress"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_patientname" />
+
+            <ProgressBar
+                android:id="@+id/tasProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="9"
+                android:background="@color/top_dark_gray"
+                android:progressDrawable="@drawable/progress_drawable" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

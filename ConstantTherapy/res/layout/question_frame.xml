@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <com.constant_therapy.widget.CTTextView
+            android:id="@+id/tvTaskQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_question" />
+
+        <ImageView
+            android:id="@+id/imgSound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/sound_icon" />
+    </FrameLayout>
+
+</RelativeLayout>

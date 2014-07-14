@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_weight="6.5"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.5"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/checkAns"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/plz_login" />
+
+                        <ImageView
+                            android:id="@+id/imgWrong"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/red_x"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/answer"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="\?"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/plz_login" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/secondNo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|right"
+                            android:paddingRight="15dp"
+                            android:text="222"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/plz_login" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/firstNo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/long_division_symbol"
+                            android:gravity="center"
+                            android:text="222"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/plz_login" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCheckAns"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="20dp"
+                    android:layout_weight="2.5"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/selector"
+                        android:orientation="vertical" >
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/check_answer"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/btn_save" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_weight="6.5"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

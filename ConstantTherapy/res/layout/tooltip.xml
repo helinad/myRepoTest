@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.constant_therapy.widget.CTTextView
+            android:id="@+id/tvHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_tooltip"
+            android:textStyle="bold" />
+
+        <com.constant_therapy.widget.CTTextView
+            android:id="@+id/tvTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_tooltip" />
+
+        <com.constant_therapy.widget.CTTextView
+            android:id="@+id/tvMins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_tooltip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/glass_down_arrow" />
+
+</LinearLayout>

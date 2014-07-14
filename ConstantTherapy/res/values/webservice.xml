@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!-- @Dev: Helina -->
+     
+   <!--  <string name="remote_preurl">https://constanttherapy.com:8443/ct-service-230/api/</string> -->
+    
+     <string name="remote_preurl">https://dev.constanttherapy.com:8443/ct-service-230/api/</string>
+    
+     <string name="remote_ct_domain">constanttherapy.com</string>
+   
+     
+    <string name="remote_user">user</string>
+    <string name="remote_patient">patient</string>
+    <string name="remote_login">login</string>
+    <string name="remote_clinician">clinician/</string>
+    <string name="remote_clinician_alert">alerts/clinician</string>
+    <string name="remote_clinician_tasks">task/types/hierarchy</string>
+    <string name="remote_deletesince">resources/deletedsince/</string>
+    <string name="posturl_tasks">/session/start/ADHOC</string>
+    <string name="remote_patients">/patients</string>
+    <string name="remote_dashboard">/dashboard</string>
+    <string name="remote_dashboard_summary">/dashboard/summary/</string>
+    <string name="remote_compilance">/compliance/daily</string>
+    <string name="remote_lineplot">/lineplot</string>
+    <string name="remote_save">/schedule/add</string>
+    <string name="remote_active">/schedule/active</string>
+    <string name="remote_typescores">/tasktype/scores</string>
+    <string name="remote_summaryresponse">/dashboard/summary/sessionId:</string>
+    <string name="remote_session">/session/</string>
+    <string name="remote_end">/end/</string>
+    <string name="remote_response">/responses</string>
+    <string name="remote_preference">/preference/</string>
+    <string name="validate_email">validateemail</string>
+    <string name="lastname">/lastname/</string>
+    <string name="firstname">/firstname/</string>
+    <string name="phonenumber">/phonenumber/</string>
+    <string name="email">/email/</string>
+    <string name="changepassword">changepassword</string>
+    
+     <!-- temp_url -->
+     
+     <string name="remote_audiochoice_tasks">https://dl.dropboxusercontent.com/s/flrkcgdu8amewm9/audio_choice.json</string>
+     <string name="remote_audioyesorno_tasks">https://dl.dropboxusercontent.com/s/mkryf9kbqyahai1/audio_yesorno.json</string>
+     <string name="remote_multichoice_tasks">https://dl.dropboxusercontent.com/s/hkzfblva51jrnoz/multi_choice.json</string>
+     <string name="remote_clockmath_tasks">https://dl.dropboxusercontent.com/s/kt9wii3f2eotmea/clock_math.json</string>
+     <string name="remote_yesorno_tasks">https://dl.dropboxusercontent.com/s/97tcqy453h7tw34/yesorno.json</string>
+     <string name="remote_flanker_task">https://dl.dropboxusercontent.com/s/gcmis82s0ctxuaa/flanker.json</string>
+
+    
+    <!-- @Dev: Arumugam -->
+    
+    
+    <string name="helpoverlaycliniciansummary">https://dl.dropboxusercontent.com/u/184003479/CT/android/clinician/Summary/clinician_summary.json</string>
+    <string name="helpoverlaycliniciantasks">https://dl.dropboxusercontent.com/u/184003479/CT/android/clinician/TherapyTasks/clinician_therapy_tasks.json</string>
+    <string name="helpoverlayleft">https://dl.dropboxusercontent.com/u/184003479/CT/android/patient/Welcome/patient_welcome_right.json</string>
+    <string name="helpoverlayright">https://dl.dropboxusercontent.com/u/184003479/CT/android/patient/L_Welcome/patient_welcome_left.json</string>
+    <string name="helpoverlayadvancesummary">https://dl.dropboxusercontent.com/u/184003479/CT/android/patient/Summary/patient_summary.json</string>
+    <string name="helpoverlayadvancetasks">https://dl.dropboxusercontent.com/u/184003479/CT/android/patient/TherapyTasks/patient_therapy_tasks.json</string>
+
+</resources>

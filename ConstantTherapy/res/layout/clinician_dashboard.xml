@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.25"
+            android:orientation="vertical"
+            android:weightSum="9" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="9" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/top_dark_gray"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <include layout="@layout/titlebar" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4.25"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.75"
+                        android:orientation="vertical"
+                        android:weightSum="5" >
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:padding="2dp" >
+
+                            <com.constant_therapy.charts.PieChart
+                                android:id="@+id/chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center" />
+
+                            <ImageView
+                                android:id="@+id/progressBar1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:alpha="0.2"
+                                android:src="@drawable/ct_icon_round"
+                                android:visibility="gone" />
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvPercent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text=""
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_percent" />
+                        </RelativeLayout>
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/txtCompletedItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/txt_items"
+                            android:textStyle="bold" />
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/complete"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/txt_complete" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical"
+                        android:padding="2dp"
+                        android:weightSum="5" >
+
+                        <RelativeLayout
+                            android:id="@+id/rlMiddletext"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.75"
+                            android:background="@drawable/selector"
+                            android:orientation="vertical" >
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvMiddletext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/imageView51"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/select_date"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/txt_day" />
+
+                            <ImageView
+                                android:id="@+id/imageView51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="11dp"
+                                android:rotation="90"
+                                android:src="@drawable/down_arrow" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4.25" >
+
+                            <ListView
+                                android:id="@+id/listView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:divider="@android:color/white"
+                                android:dividerHeight="1dp"
+                                android:listSelector="@drawable/list_selector"
+                                android:scrollbars="vertical" >
+                            </ListView>
+
+                            <ImageView
+                                android:id="@+id/progressBar2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:alpha="0.2"
+                                android:src="@drawable/ct_icon_round"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.75"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dp"
+                        android:weightSum="10" >
+
+                        <LinearLayout
+                            android:id="@+id/llSeemore"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvMonth"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_month"
+                                android:textStyle="bold" />
+
+                            <com.constant_therapy.widget.CTTextView
+                                android:id="@+id/tvSeemore"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="@string/see_more"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_seemore" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:background="@color/bg_light_gray"
+                            android:orientation="vertical" >
+
+                            <GridView
+                                android:id="@+id/calendar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:horizontalSpacing="2dp"
+                                android:listSelector="@android:color/transparent"
+                                android:numColumns="7"
+                                android:stretchMode="columnWidth"
+                                android:verticalSpacing="2dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.75"
+                    android:background="@color/bg_chart" >
+
+                    <RelativeLayout
+                        android:id="@+id/combinedChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp" >
+
+                        <ImageView
+                            android:id="@+id/progressBar3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:alpha="0.2"
+                            android:src="@drawable/ct_icon_round"
+                            android:visibility="gone" />
+
+                        <com.constant_therapy.widget.CTTextView
+                            android:id="@+id/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/no_data"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/txt_nodata"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.75" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/btnSummary"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/summary_tab"
+                    android:text="@string/summary"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btn_bottombar" />
+
+                <Button
+                    android:id="@+id/btnTasks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tasks_tabs_brw"
+                    android:text="@string/tasks"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btn_bottombar" />
+
+                <Button
+                    android:id="@+id/btnPerformance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/perfor_tabs_brw"
+                    android:text="@string/performance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btn_bottombar" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

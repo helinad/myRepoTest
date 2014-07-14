@@ -1,0 +1,71 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+  <!-- Login screen -->
+
+    <dimen name="plz_login">35sp</dimen>
+    <dimen name="btn_signup">28sp</dimen>
+    <dimen name="btn_login">28sp</dimen>
+    <dimen name="et_user">24sp</dimen>
+    <dimen name="forget_pass">25sp</dimen>
+
+    <!-- Patient Dashboard -->
+    <dimen name="loginas">14sp</dimen>
+    <dimen name="patient_name">22sp</dimen>
+    <dimen name="txt_title">27sp</dimen>
+    <dimen name="txt_percent">18sp</dimen>
+    <dimen name="txt_items">18sp</dimen>
+    <dimen name="txt_complete">14sp</dimen>
+    <dimen name="txt_start">35sp</dimen>
+    <dimen name="txt_nodata">28sp</dimen>
+    
+    <!-- Clinician Dashboard -->
+	<dimen name="txt_patientname">20sp</dimen>
+	<dimen name="txt_day">16sp</dimen>
+	<dimen name="txt_month">15sp</dimen>
+	<dimen name="txt_seemore">14sp</dimen>
+	<dimen name="txt_tooltip">15sp</dimen>
+	<dimen name="btn_bottombar">20sp</dimen>
+	
+		<!-- Clinician Tasks Dashboard -->
+ 	
+ 	<dimen name="txt_middletitle">22sp</dimen>
+ 	<dimen name="txt_homework">16sp</dimen>
+ 	<dimen name="btn_save">24sp</dimen>
+	
+	<!-- Alert Dialog -->
+	<dimen name="txt_dialogtitle">18sp</dimen>
+	<dimen name="txt_message">14sp</dimen>
+	<dimen name="btn_ok">20sp</dimen>
+	<dimen name="txt_plzselect">22sp</dimen>
+	
+	  <!-- Doing Tasks -->
+  	 <dimen name="txt_wordfragment">60sp</dimen>
+  	   <dimen name="txt_question">23sp</dimen>
+  	   <dimen name="txt_drop">40sp</dimen>
+  	   <dimen name="txt_drag">30sp</dimen>
+  	       <dimen name="txt_next">35sp</dimen>
+    
+    
+	  <!-- height of an custom left and right switch in setting -->
+     <dimen name="switch_height">60dip</dimen>
+     
+     <!-- width of an custom left and right switch in setting -->
+     <dimen name="switch_width">250dip</dimen>
+     
+       <!-- width of an microphone in task -->
+     <dimen name="microphone_width">120dip</dimen>
+     
+     <!-- width of an outter microphone in task -->
+     <dimen name="outter_microphone_width">150dip</dimen>
+     
+     <dimen name="dragtxt_wordfragment">22dp</dimen>
+
+<!-- update popup -->
+    <dimen name="update_title">18sp</dimen>
+    <dimen name="txtUpdate">21sp</dimen>
+   
+</resources>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_light_gray" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tvClear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/login_gray"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:text="@string/clear"
+                    android:textColor="@color/white" >
+
+                    <Button
+                        android:id="@+id/btnTask"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@color/login_blue"
+                        android:text="@string/task_count"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt_month" />
+
+                    <Button
+                        android:id="@+id/btnDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@color/login_gray"
+                        android:text="@string/duration"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt_month" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.4"
+                android:background="@color/bg_light_gray"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <LinearLayout
+                    android:id="@+id/llLeftArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/top_dark_gray"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnLeftArrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:rotation="180"
+                        android:padding="5dp"
+                        android:background="@drawable/arrowright" />
+                </LinearLayout>
+
+                <com.constant_therapy.widget.CTTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/today"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_month" />
+
+                <LinearLayout
+                    android:id="@+id/llRightarrow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/top_dark_gray"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnRightarrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:background="@drawable/arrowright" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="4.5"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/tvSeemore"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="4.5"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/tvSeemore"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/tvMonth6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txt_month"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@color/bg_light_gray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/bg_light_gray"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/calendar6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="7"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

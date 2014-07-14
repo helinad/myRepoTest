@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light_gray"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvItem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="left|center"
+               
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+               android:textSize="@dimen/loginas"/>
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="left|center"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@android:color/black"
+               android:textSize="@dimen/loginas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <ProgressBar
+                android:id="@+id/seekBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_chart"
+                android:progressDrawable="@drawable/seekbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25" >
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvPercent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_complete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75" >
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvMins"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+               android:textSize="@dimen/txt_tooltip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

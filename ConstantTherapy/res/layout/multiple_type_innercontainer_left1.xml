@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/response_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/question_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/choice_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:id="@+id/choice_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/notepad_frame" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.7" >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/checkAns"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/plz_login" />
+
+                    <ImageView
+                        android:id="@+id/imgWrong"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/red_x"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:background="@color/bg_light_gray"
+                android:clickable="false"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/question"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_title"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/answer_first"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:hint="\?"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/plz_login"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/question"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_title"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:id="@+id/answer_second"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:hint="\?"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/plz_login"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout 
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCheckAns"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector" >
+
+                    <com.constant_therapy.widget.CTTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/check_answer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btn_save" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

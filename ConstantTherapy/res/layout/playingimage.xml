@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.constant_therapy.widget.CTTextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/login_gray"
+        android:paddingBottom="15dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="15dp"
+        android:singleLine="true"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_tap" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+              android:clickable="false"
+                    android:background="@android:color/transparent"
+                android:visibility="gone"
+        android:layout_alignTop="@+id/imageView1"
+        />
+
+</RelativeLayout>

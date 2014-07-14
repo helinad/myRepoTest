@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_list_gray"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_list_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvItem"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="25dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/loginas"
+                android:textStyle="bold" />
+
+            <com.constant_therapy.widget.CTTextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/loginas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+
+            <ProgressBar
+                android:id="@+id/seekBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp"
+                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/bg_chart"
+                android:progressDrawable="@drawable/seekbar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

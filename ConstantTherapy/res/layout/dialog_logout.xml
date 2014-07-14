@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <com.constant_therapy.widget.CTTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/logout_sure"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_dialogtitle"
+        android:textStyle="bold" />
+
+    <com.constant_therapy.widget.CTTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_message"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/btn_orange"
+            android:text="@string/yes"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_ok" />
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/bg_light_gray"
+            android:text="@string/no"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_ok"  />
+    </LinearLayout>
+
+</RelativeLayout>

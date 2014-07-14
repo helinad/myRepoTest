@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1">
+   <LinearLayout
+              android:id="@+id/taskWordLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                 android:layout_margin="10dp"
+               android:background="@color/bg_sandal"
+             android:orientation="vertical" >
+
+        <com.constant_therapy.widget.CTTextView
+            android:id="@+id/taskWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+          
+             android:lines="2"
+         android:layout_gravity="center"
+         
+            android:textSize="@dimen/dragtxt_wordfragment" />
+       </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/imgOuter"
+                android:layout_width="@dimen/outter_microphone_width"
+                android:layout_height="@dimen/outter_microphone_width"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wait_cursor"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/imgMicrophone"
+                android:layout_width="@dimen/microphone_width"
+                android:layout_height="@dimen/microphone_width"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/microphone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector"
+                android:padding="30dp"
+                android:text="@string/start"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

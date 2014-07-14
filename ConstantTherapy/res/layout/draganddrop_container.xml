@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/login_gray"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/question_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.25"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+ <LinearLayout
+            android:id="@+id/inner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.75"
+            android:background="@color/black"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                 android:id="@+id/sequence_drag"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+         
+                android:layout_weight="4.3"
+               
+                android:background="@color/login_gray"
+                android:orientation="vertical"
+               
+                 >
+            </LinearLayout>
+            
+            <LinearLayout
+                   android:id="@+id/sequence_drop"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+            
+               
+                android:layout_weight="4.3"
+                android:background="@color/login_gray"
+                 >
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>
