@@ -110,7 +110,7 @@ import com.constant_therapy.widget.ProgressHUD;
 import com.constant_therapy.widget.SwipeListView;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-//Test
+//Test changes for commit in Git
 public class TasksActivity extends PatientSelectorActivity implements
 		MyResultReceiver.Receiver, View.OnClickListener, PopoverViewDelegate,
 		AnimationListener, OnItemLongClickListener,
@@ -132,7 +132,7 @@ public class TasksActivity extends PatientSelectorActivity implements
 	List<TasksHierarchy> taskHierarchyCombinedList = new ArrayList<TasksHierarchy>();
 	List<TasksHierarchy> listDataChild = new ArrayList<TasksHierarchy>();
 	List<TasksHierarchy> listNoHierachy = new ArrayList<TasksHierarchy>();
-
+// Test to commit or push in Git
 	static List<NLevelItem> nLevelItemlist;
 	List<NLevelItem> nLevelItemResults = new ArrayList<NLevelItem>();
 	TasksType taskType;
