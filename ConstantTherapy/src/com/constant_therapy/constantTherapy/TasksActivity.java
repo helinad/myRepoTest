@@ -407,6 +407,11 @@ public class TasksActivity extends PatientSelectorActivity implements
 			if (nL.getParent() == null) {
 				tempList.add(nL);
 			} else {
+				
+				tvPatient.setText(getString(R.string.simple_mode));
+				imgPatient.setVisibility(View.GONE);
+				tvTitle.setText(getString(R.string.advanced_mode));
+				llNote.setVisibility(View.INVISIBLE);
 				NLevelItem parent = getParent(nL.getParent().getWrappedObject()
 						.getDisplayName());
 				if (parent.getParent() != null) {
