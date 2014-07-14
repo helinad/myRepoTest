@@ -1273,12 +1273,12 @@ public class TasksActivity extends PatientSelectorActivity implements
 	private List<TasksHierarchy> rearrangeListBeforeSorting(List<TasksHierarchy> listHierachy){
 		List<TasksHierarchy> mainHierachy = new ArrayList<TasksHierarchy>();
 		List<TasksHierarchy> nullHierachy = new ArrayList<TasksHierarchy>();
-		
+		removeDuplicate(listHierachy);
 		for(int i = 0; i < listHierachy.size(); i++){
-			if(Helper.getSystemname(taskTypeScores, listHierachy.get(i).getSystemName()) != null)
-				mainHierachy.add(listHierachy.get(i));
-			else
+			if(Helper.getSystemname(taskTypeScores, listHierachy.get(i).getSystemName()) == null)
 				nullHierachy.add(listHierachy.get(i));
+			else
+				mainHierachy.add(listHierachy.get(i));
 		}
 		Log.v(TAG, ""+nullHierachy.size());
 		mainHierachy.addAll(nullHierachy);
